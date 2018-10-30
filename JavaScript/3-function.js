@@ -1,9 +1,9 @@
 'use strict';
 
-const arrayToQueueAdapter = () =>
+const arrayToQueueAdapter = () => {
   const arr = [];
   arr.enqueue = data => arr.push(data);
-  arr.dequeue = data => this.pop();
+  arr.dequeue = () => this.pop();
   arr.count = () => this.length;
 };
 

@@ -7,7 +7,7 @@ class ArrayToQueueAdapter {
   enqueue(data) {
     this.array.push(data);
   }
-  dequeue(data) {
+  dequeue() {
     return this.array.pop();
   }
   get count() {

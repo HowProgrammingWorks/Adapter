@@ -4,7 +4,7 @@ class ArrayToQueueAdapter extends Array {
   enqueue(data) {
     this.push(data);
   }
-  dequeue(data) {
+  dequeue() {
     return this.pop();
   }
   get count() {

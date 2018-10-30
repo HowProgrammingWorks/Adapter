@@ -8,7 +8,7 @@ ArrayToQueueAdapter.prototype.enqueue = function(data) {
   this.push(data);
 };
 
-ArrayToQueueAdapter.prototype.dequeue = function(data) {
+ArrayToQueueAdapter.prototype.dequeue = function() {
   return this.pop();
 };
 
