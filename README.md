@@ -1,2 +1,1 @@
-# Adapter
-Pattern Adapter Implementations
+# Pattern Adapter Implementations
