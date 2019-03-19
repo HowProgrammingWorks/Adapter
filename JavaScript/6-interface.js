@@ -49,7 +49,7 @@ console.dir({
     name: dict.has('name'),
     city: dict.has('city'),
   },
-  keys: dict.get('name'),
+  keys: dict.keys(),
 });
 
-dict.clear();
+//dict.clear();

@@ -3,8 +3,9 @@
 const arrayToQueueAdapter = () => {
   const arr = [];
   arr.enqueue = data => arr.push(data);
-  arr.dequeue = () => this.pop();
-  arr.count = () => this.length;
+  arr.dequeue = () => arr.pop();
+  arr.count = () => arr.length;
+  return arr;
 };
 
 // Usage
