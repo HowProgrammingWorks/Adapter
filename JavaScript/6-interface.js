@@ -8,24 +8,31 @@ class HashMap {
     this.path = path;
     fs.mkdirSync(path);
   }
+
   set(key, value) {
     this.fs.writeFileSync(this.path + key, JSON.stringify(value), 'utf8');
   }
+
   get(key) {
     return JSON.parse(this.fs.readFileSync(this.path + key, 'utf8'));
   }
+
   has(key) {
     return this.fs.existsSync(this.path + key);
   }
+
   delete(key) {
     this.fs.unlinkSync(this.path + key);
   }
+
   get size() {
     return this.keys().length;
   }
+
   keys() {
     return this.fs.readdirSync(this.path);
   }
+
   clear() {
     this.keys().forEach(file => {
       this.delete(file);

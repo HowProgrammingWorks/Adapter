@@ -7,9 +7,11 @@ class AdaptiveEmitter extends EventEmitter {
     super();
     this.transformations = {};
   }
+
   transform(from, to, fn) {
     this.transformations[from] = { to, fn };
   }
+
   emit(name, ...args) {
     const transform = this.transformations[name];
     if (transform) {
