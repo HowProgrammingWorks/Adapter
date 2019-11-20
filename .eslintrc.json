@@ -113,6 +113,9 @@
     "new-parens": [
       "error"
     ],
+    "no-lonely-if": [
+      "error"
+    ],
     "no-trailing-spaces": [
       "error"
     ],
