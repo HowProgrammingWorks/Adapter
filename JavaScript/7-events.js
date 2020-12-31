@@ -24,9 +24,9 @@ class AdaptiveEmitter extends EventEmitter {
 // Usage
 
 const ae = new AdaptiveEmitter();
-ae.transform('timer', 'timeout', date => [date.toLocaleString()]);
+ae.transform('timer', 'timeout', (date) => [date.toLocaleString()]);
 
-ae.on('timeout', date => {
+ae.on('timeout', (date) => {
   console.dir({ date });
 });
 

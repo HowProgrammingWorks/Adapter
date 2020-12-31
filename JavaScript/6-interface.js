@@ -34,7 +34,7 @@ class HashMap {
   }
 
   clear() {
-    this.keys().forEach(file => {
+    this.keys().forEach((file) => {
       this.delete(file);
     });
   }

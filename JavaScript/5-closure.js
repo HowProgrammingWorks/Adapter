@@ -1,6 +1,6 @@
 'use strict';
 
-const arrayToQueueAdapter = arr => ({
+const arrayToQueueAdapter = (arr) => ({
   enqueue(data) {
     arr.push(data);
   },
