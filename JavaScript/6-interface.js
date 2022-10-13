@@ -42,7 +42,7 @@ class HashMap {
 
 // Usage
 
-const fs = require('fs');
+const fs = require('node:fs');
 const dict = new HashMap(fs, './data/');
 dict.set('name', 'Marcus');
 dict.set('born', '121-04-26');
