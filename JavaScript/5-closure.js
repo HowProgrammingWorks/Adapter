@@ -1,16 +1,16 @@
 'use strict';
 
-const arrayToQueueAdapter = (arr) => ({
+const arrayToQueueAdapter = (array) => ({
   enqueue(data) {
-    arr.push(data);
+    array.push(data);
   },
 
   dequeue() {
-    return arr.pop();
+    return array.pop();
   },
 
   get count() {
-    return arr.length;
+    return array.length;
   }
 });
 

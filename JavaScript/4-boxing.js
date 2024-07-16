@@ -1,20 +1,25 @@
 'use strict';
 
 class ArrayToQueueAdapter {
-  constructor(arr) {
-    this.array = arr;
+  #array = null;
+
+  constructor(array) {
+    if (!Array.isArray(array)) {
+      throw new Error('Array instance expected');
+    }
+    this.#array = array;
   }
 
   enqueue(data) {
-    this.array.push(data);
+    this.#array.push(data);
   }
 
   dequeue() {
-    return this.array.pop();
+    return this.#array.pop();
   }
 
   get count() {
-    return this.array.length;
+    return this.#array.length;
   }
 }
 

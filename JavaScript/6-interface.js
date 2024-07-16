@@ -10,11 +10,15 @@ class HashMap {
   }
 
   set(key, value) {
-    this.fs.writeFileSync(this.path + key, JSON.stringify(value), 'utf8');
+    const name = this.path + key;
+    const data = JSON.stringify(value);
+    this.fs.writeFileSync(name, data, 'utf8');
   }
 
   get(key) {
-    return JSON.parse(this.fs.readFileSync(this.path + key, 'utf8'));
+    const name = this.path + key;
+    const data = this.fs.readFileSync(name, 'utf8');
+    return JSON.parse(data);
   }
 
   has(key) {
