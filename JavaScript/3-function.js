@@ -1,11 +1,11 @@
 'use strict';
 
 const arrayToQueueAdapter = () => {
-  const arr = [];
-  arr.enqueue = (data) => arr.push(data);
-  arr.dequeue = () => arr.pop();
-  arr.count = () => arr.length;
-  return arr;
+  const array = [];
+  array.enqueue = (data) => array.push(data);
+  array.dequeue = () => array.pop();
+  array.count = () => array.length;
+  return array;
 };
 
 // Usage
