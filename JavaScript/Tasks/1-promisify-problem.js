@@ -1,7 +1,7 @@
 'use strict';
 
-// Task: implement cancel using AbortController,
-// AbortSignal, or passing `timeout` as an option
+// Task: implement cancel passing `timeout` as an option
+// to promisified function (last argiment instead of callback)
 
 const promisify = (fn) => (...args) => {
   const promise = new Promise((resolve, reject) => {
