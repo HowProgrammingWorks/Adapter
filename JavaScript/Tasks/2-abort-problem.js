@@ -1,8 +1,8 @@
 'use strict';
 
-// Task: implement cancel passing `AbortSignal` as an option
-// to promisified function (last argiment instead of callback)
-// Hint: create `AbortController` or `AbortSignal` in usage section
+// Task: implement cancellation by passing `AbortSignal` as an option
+// to the promisified function (last argument, replacing the callback).
+// Hint: Create `AbortController` or `AbortSignal` in the usage section.
 
 const promisify = (fn) => (...args) => {
   const promise = new Promise((resolve, reject) => {

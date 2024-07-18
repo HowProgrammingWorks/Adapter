@@ -1,8 +1,8 @@
 'use strict';
 
-// Task: refactor `Timer` to make event name (`step` in example)
-// configurable (not hardcoded into `Timer`)
-// Hint: you need Node.js >= v19.0.0
+// Task: refactor `Timer` to make the event name configurable
+// (e.g., 'step' in the example) and not hardcoded into the `Timer`.
+// Hint: You need Node.js >= v19.0.0
 
 class Timer extends EventTarget {
   #counter = 0;

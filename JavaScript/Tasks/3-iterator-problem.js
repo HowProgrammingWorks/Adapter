@@ -1,10 +1,8 @@
 'use strict';
 
-// Task: In usage section we have 3 blocks of code (in iife wrappers)
-// with async iterators generated from single `Timer` instance.
-// The prombem is: first and second blocks does not iterate,
-// just last one works as of now. Fix this to allow all blocks iterate
-// in parallel.
+// Task: ensure all blocks of code in the usage section iterate in parallel.
+// Currently, only the last block (of 3) works. Fix this issue so that
+// all blocks can iterate concurrently using a single `Timer` instance.
 
 class Timer {
   #counter = 0;
