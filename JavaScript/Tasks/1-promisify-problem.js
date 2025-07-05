@@ -1,8 +1,10 @@
 'use strict';
 
-// Task: implement a cancelable promise by passing `timeout: number`
-// as an option to the promisified function (last argument,
-// replacing the callback).
+// Task: implement a cancelable promisify function.
+// Allow passing new argument `timeout: number` after the last argument
+// to the original function replacing the callback. The promisify should check
+// the existence of timeout and apply logic to implement it on top of calling original function
+// There is no need to propagate timeout to original function.
 
 const promisify = (fn) => (...args) => {
   const promise = new Promise((resolve, reject) => {
