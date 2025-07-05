@@ -3,7 +3,7 @@
 // Task: implement a cancelable promisify function with AbortController.
 // Allow passing new argument `AbortSignal` after the last argument
 // to the original function replacing the callback. The promisify should check
-// the existence of timeout and apply logic to implement it on top of calling original function
+// the existence of AbortSignal and apply logic to implement it on top of calling original function
 // There is no need to propagate AbortSignal to original function.
 // Hint: Create `AbortController` or `AbortSignal` in the usage section.
 
