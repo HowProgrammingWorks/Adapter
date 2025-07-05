@@ -1,8 +1,8 @@
 'use strict';
 
-// Task: ensure all blocks of code in the usage section iterate in parallel.
-// Currently, only the last block (of 3) works. Fix this issue so that
-// all blocks can iterate concurrently using a single `Timer` instance.
+// Task: ensure all blocks of code in the usage section iterate in parallel
+// on the same timer instance getting the same values. Currently, only the last block (of 3) works.
+// Update the implementation of Timer so that all blocks can iterate concurrently using a single Timer instance.
 
 class Timer {
   #counter = 0;
